@@ -179,6 +179,15 @@ export default function Home() {
           
 
         }
+          {
+            step === 3 &&  (<button className=" text-white font-medium text-lg  rounded-lg px-5 py-3 bg-blue-600" type="submit" onClick={(e) => {
+            e.preventDefault()
+            setStep(4)
+            submitHandler()
+
+            
+          }} > Submit </button>)
+          }
         
         </div>
       </form>
