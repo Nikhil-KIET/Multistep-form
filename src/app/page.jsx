@@ -150,7 +150,7 @@ export default function Home() {
 
         <div className=" flex justify-between mt-5">
         {
-          step < 3 && step>0 ? (<button className=" text-white font-medium text-lg  rounded-lg px-8 py-3 bg-blue-600" onClick={(e) => {
+          step <= 3 && step>0 ? (<button className=" text-white font-medium text-lg  rounded-lg px-8 py-3 bg-blue-600" onClick={(e) => {
             e.preventDefault()
             setStep((prev) => {
               return prev - 1
@@ -167,7 +167,7 @@ export default function Home() {
 
 
         {
-           step <= 3 && (<button className=" text-white font-medium text-lg  rounded-lg px-5 py-3 bg-blue-600"    onClick={(e) => {
+           step< 3 && (<button className=" text-white font-medium text-lg  rounded-lg px-5 py-3 bg-blue-600"    onClick={(e) => {
             e.preventDefault()
             
             setStep((prev) => {
